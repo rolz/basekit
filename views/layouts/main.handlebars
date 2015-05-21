@@ -1,0 +1,38 @@
+{{#if version}}
+<!-- BUILD VERSION: {{version}} -->
+{{/if}}
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black" />
+    <meta name="apple-mobile-web-app-title" content="Todo-App" />
+    <!-- favicon -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-310x310.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicons/android-icon-192x192.png" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <!-- end of favicon -->
+
+    <title>Todo-App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">var timestamp = {{timestamp}};</script>
+    {{#if development}}
+    <script src="{{ipaddress}}:{{options.webpackServerPort}}/webpack-dev-server.js"></script>
+    <script src="{{ipaddress}}:{{options.webpackServerPort}}/dist/lib.js"></script>
+    {{else}}
+    <script src="/lib.js"></script>
+    {{/if}}
+    {{{body}}}
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "id": "all",
+      "label": "All"
+    },
+    {
+      "id": "active",
+      "label": "Active"
+    },
+     {
+      "id": "completed",
+      "label": "Completed"
+    }
+  ]
+}

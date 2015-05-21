@@ -1,0 +1,18 @@
+{
+  "server": {
+    "port": 5000,
+    "livereloadPort": 35729,
+    "webpackServerPort": 8090,
+    "staticDir": ["/public", "/dist"]
+  },
+  "db": {
+    "localUrl": "postgres://localhost:5432/todo"
+  },
+  "api": {
+    "urlParam": "/api/v1"
+  },
+  "admin": {
+    "id": "junioradmin",
+    "pw": "weworkalot"
+  }
+}
