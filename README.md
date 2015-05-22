@@ -15,9 +15,9 @@
 6. In PSQL terminal window create database todo: `CREATE DATABASE todo;`.
 7. Check if database is created with: `\l`.
 8. Enter todo database with: `\c todo`.
-8. In another terminal window execute: `npm install -g db-migrate`. [link](https://github.com/db-migrate/node-db-migrate)
+8. In another terminal window execute: `$ npm install -g db-migrate`. [link](https://github.com/db-migrate/node-db-migrate)
 10. In terminal enter child directory: `todo-app/lib/api/db/`.
-11. Execute db-migrate to create database schema: `db-migrate up`.
+11. Execute db-migrate to create database schema: `$ db-migrate up`.
 
 #### Local Deployment ( running at localhost:5000 )
 
